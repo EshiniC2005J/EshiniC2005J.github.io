@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>J.A.Eshini Chamathka Jayakody | Bsc(hons)Biotechnology Portfolio</title>
+<meta name="description" content="E-Portfolio of Jayakody Achchige Eshini Chamathka Jayakody, BSc (Hons) in Biotechnology student at SLIIT.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+ --green:#0f3b3a;--deep:#0a2827;--brass:#b08d57;--ivory:#faf7f0;--ink:#1c2b2a;--muted:#5c6b69;--line:#e1dac9;
+ /* molecular hexagon lattice, drawn as an inline SVG so no extra image file is needed */
+ --hex-light:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100' viewBox='0 0 56 100'%3E%3Cpath d='M28 66L0 50V16L28 0l28 16v34L28 66v34' fill='none' stroke='%230f3b3a' stroke-opacity='.07' stroke-width='1.5'/%3E%3Cpath d='M28 0v34L0 50v34l28 16 28-16V50L28 34' fill='none' stroke='%230f3b3a' stroke-opacity='.07' stroke-width='1.5'/%3E%3C/svg%3E");
+ --hex-dark:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100' viewBox='0 0 56 100'%3E%3Cpath d='M28 66L0 50V16L28 0l28 16v34L28 66v34' fill='none' stroke='%23b08d57' stroke-opacity='.22' stroke-width='1.5'/%3E%3Cpath d='M28 0v34L0 50v34l28 16 28-16V50L28 34' fill='none' stroke='%23b08d57' stroke-opacity='.22' stroke-width='1.5'/%3E%3C/svg%3E")
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font:17px/1.7 "Public Sans",system-ui,sans-serif;color:var(--ink);background:var(--ivory) var(--hex-light)}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;margin:0;line-height:1.15}
+a{color:var(--green)}
+a:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+.bar{position:sticky;top:0;z-index:9;background:var(--deep);border-bottom:2px solid var(--brass);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.4rem 1.5rem;padding:.7rem clamp(1rem,5vw,3rem)}
+.bar strong{color:#fff;font:700 1.25rem "Cormorant Garamond",Georgia,serif;letter-spacing:.02em}
+.bar nav{display:flex;flex-wrap:wrap;gap:.2rem 1.2rem}
+.bar nav a{color:#e9e2d0;text-decoration:none;font-size:.92rem;font-weight:500}
+.bar nav a:hover{color:var(--brass);text-decoration:underline}
+.hero{background:var(--green) var(--hex-dark);background-attachment:fixed;color:#fff;padding:4.5rem clamp(1rem,5vw,3rem)}
+.hero-in{max-width:1040px;margin:auto;display:grid;grid-template-columns:1fr 280px;gap:3.5rem;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6vw,4.4rem);font-weight:700}
+.hero .role{color:var(--brass);font-size:1.15rem;font-weight:600;margin:.7rem 0 1.2rem}
+.hero p{max-width:60ch;color:#e6efed}
+.frame{position:relative}
+.frame::before{content:"";position:absolute;inset:16px -16px -16px 16px;border:2px solid var(--brass)}
+.frame img{position:relative;display:block;width:100%;aspect-ratio:4/5;object-fit:cover;background:#1d5553}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+.btn{padding:.75rem 1.5rem;text-decoration:none;font-weight:600;border:2px solid var(--brass)}
+.btn.p{background:var(--brass);color:var(--deep)}
+.btn.p:hover{background:#c8a56c}
+.btn.s{color:#fff}
+.btn.s:hover{background:rgba(176,141,87,.25)}
+main{max-width:1040px;margin:auto;padding:1rem clamp(1rem,5vw,3rem) 3rem}
+section{display:grid;grid-template-columns:230px 1fr;gap:2rem;padding:2.6rem 0;border-bottom:1px solid var(--line)}
+section:last-child{border-bottom:0}
+section>h2{font-size:1.8rem;color:var(--green);font-weight:700;align-self:start;padding-top:.15rem}
+section>h2::after{content:"";display:block;width:48px;height:3px;background:var(--brass);margin-top:.6rem}
+.entry{margin-bottom:1.4rem}
+.entry:last-child{margin-bottom:0}
+.entry h3{font-size:1.3rem;color:var(--ink)}
+.entry small{color:var(--muted);font-size:.92rem}
+.entry p{margin:.3rem 0 0}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem}
+.project{background:#fff;border:1px solid var(--line);border-top:4px solid var(--brass);padding:1.1rem 1.3rem}
+.project h3{font-size:1.25rem}
+.project p{margin:.4rem 0}
+.skills{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.5rem 1.5rem}
+.skills li::before{content:"";display:inline-block;width:9px;height:9px;margin-right:.7rem;background:var(--brass);transform:rotate(45deg)}
+footer{background:var(--green) var(--hex-dark);color:#e6efed;text-align:center;padding:3rem 1rem;border-top:3px solid var(--brass)}
+footer h2{color:#fff;font-size:2rem;margin-bottom:.6rem}
+footer a{color:var(--brass)}
+footer p{margin:.3rem 0}
+@media(max-width:800px){
+ .hero{background-attachment:scroll}
+ .hero-in{grid-template-columns:1fr;gap:2.5rem}
+ .frame{max-width:240px;order:-1;margin:0 auto 1rem}
+ section{grid-template-columns:1fr;gap:1rem}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="bar">
+ <strong>J.A.Eshini Chamathka Jayakody</strong>
+ <nav aria-label="Main navigation">
+  <a href="#about">About me</a><a href="#education">Education</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#hobbies">Hobbies</a><a href="#contact">Contact</a>
+ </nav>
+</header>
+
+<div class="hero" id="about">
+ <div class="hero-in">
+  <div>
+   <h1>J.A.Eshini Chamathka Jayakody</h1>
+   <p class="role">BSc (Hons) in Biotechnology | SLIIT</p>
+   <p><p>I am a first-year undergraduate pursuing a BSc (Hons) in Biotechnology at SLIIT. I am particularly interested in molecular biology and the application of living systems to food, health and environmental challenges. Through my coursework, laboratory practicals and group projects, I am developing strong analytical, technical and communication skills. I am seeking an internship in a laboratory or biotechnology organisation where I can gain practical experience and contribute to meaningful work.</p> 
+   <div class="btns">
+    <a class="btn p" href="https://1drv.ms/b/c/89645bdea75a7f76/IQDCNRhXy66-Qrr5NUGHZaZ7AcTMkuth1M1qhdI_qoY-FX8?e=JFNv6Y" download>Download resume (PDF)</a>
+    <a class="btn s" href="#contact">Contact me</a>
+   </div>
+  </div>
+  <div class="frame"><img src="Eshini.png" alt="Formal photograph of J.A.Eshini Chamathka Jayakody"></div>
+ </div>
+</div>
+
+<main>
+ <section id="education">
+  <h2>Educational qualifications</h2>
+  <div>
+   <div class="entry"><h3>BSc (Hons) in Biotechnology</h3><small>Higher education | SLIIT | 2026 to present</small></div>
+   <div class="entry"><h3>G.C.E. Advanced Level, [Biology stream]</h3><small>Secondary education | [Central College Piliyandala] | [2025]</small>
+     <ul>
+       <li>Biology- s</li>
+       <li>Physics -s</li>
+       <li>Chemistry-s</li>
+     </ul>
+   </div>
+   <div class="entry"><h3>G.C.E. Ordinary Level</h3><small>Secondary education | [Central College Piliyandala] | [2021]</small>
+     <ul>
+        <li>Sinhala-A</li>
+        <li>History-A</li>
+        <li>Buddhism-A</li>
+        <li>Dancing-A</li>
+        <li>ICT-B</li>
+        <li>English-B</li>
+        <li>Science-C</li>
+        <li>Maths-C</li>
+        <li>Commerce-C</li>
+     </ul>
+     </div>
+  </div>
+ </section>
+
+
+
+ <section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+   <div class="project 1">
+    <h3>digital portfolio using microsoft word</h3>
+    <p>Developed a professional portfolio that highlights my qualifications and contact information. I organized the layout, used the same formatting throughout, and exported the finished document in PDF form</p>
+    <a href="https://1drv.ms/b/c/89645bdea75a7f76/IQCrtUnD1VyhRaYye_UL_pUKAdcMTR3REY5YYKABgwlhXSM?e=hObQ5t"download>download the document </a></div>
+   <div class="project 2">
+    <h3>You Tube Video: The Future of Biotechnology</h3>
+    <p>Created a video on the future of biotechnology, for which I participated in writing the script, filming the footage, and finishing the video</p>
+    <a href="https://youtu.be/WgF74vy_J8s">View project</a>
+   </div>
+  <div class="project 3">
+    <h3>Titration Practicals and Lab reports</h3>
+    <p>Conducted titration experiments at the laboratory and kept precise records. I examined the findings and wrote a formal research report following each experiment</p>
+   </div>
+ </section>
+
+
+ <section id="skills">
+  <h2>Skills</h2>
+  <ul class="skills">
+    <li>Microsoft Office</li>
+    <li>Laboratory safety</li>
+    <li>Data recording</li>
+    <li>Teamwork</li>
+    <li>Communication</li>
+    <li>Basic chemical handling</li>
+    <li>Basic Video production and editing</li>
+    <li>Scientific report writting </li>
+    <li>Basic HTML and Github</li>
+  </ul>
+ </section>
+
+ <section id="hobbies">
+  <h2>Hobbies</h2>
+  <p>In my free time, I enjoy reading science articles, playing badminton and gardening.</p>
+ </section>
+</main>
+
+<footer id="contact">
+ <h2>Contact</h2>
+ <p>Email: <a href="eshini2005@gmail.com">eshini2005@gmail.com</a></p>
+ <p>LinkedIn: <a href="https://www.linkedin.com/in/Eshini Chamathka">linkedin.com/in/Eshini Chamathka</a></p>
+ <p><a href="https://1drv.ms/b/c/89645bdea75a7f76/IQDCNRhXy66-Qrr5NUGHZaZ7AcTMkuth1M1qhdI_qoY-FX8?e=JFNv6Y" download>Download my resume(PDF)</a></p>
+ <p><small>&copy; 2026 J.A.Eshini Chamathka Jayakody</small></p>
+</footer>
+</body>
+</html>
